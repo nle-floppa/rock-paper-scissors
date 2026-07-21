@@ -4,13 +4,20 @@ function getComputerChoice() {
     let outcome;
     let numOutcome = Math.floor(Math.random() * 3);
     if (numOutcome === 0) {
-        outcome = "rock";
+        outcome = "Rock";
     } else if (numOutcome === 1) {
-        outcome = "paper";
+        outcome = "Paper";
     } else {
-        outcome = "scissors";
+        outcome = "Scissors";
         }
     return outcome;
     }
 
 console.log(getComputerChoice())
+
+function getHumanChoice() {
+    const choice = prompt("Rock, Paper, or Scissors?");
+    return choice;
+}
+
+console.log(getHumanChoice());
